@@ -24,6 +24,7 @@ public class SnakeLadder {
 			} else if (options == 2) {
 				System.out.println("there is ladder");
 				Step_Count += dice_roll;
+				
 			} else if (options == 3) {
 				System.out.println("there is Snake");
 				Step_Count -= dice_roll;
@@ -35,7 +36,13 @@ public class SnakeLadder {
 			} else {
 				System.out.println("roll dice again");
 			}
+			
 			System.out.println("step count is" + Step_Count);
+			int Previous_Step_Count=Step_Count;
+			//System.out.println("previous:"+Previous_Step_Count);
+			if(Step_Count>100) {
+				Step_Count=Previous_Step_Count;
+			}
 
 			System.out.println("-------------------------");
 
