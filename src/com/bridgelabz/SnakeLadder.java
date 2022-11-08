@@ -18,7 +18,7 @@ public class SnakeLadder {
 				count_of_dice++;
 			}
 
-			if (options == 1) {
+			if(options == 1) {
 				System.out.println("No Play");
 				Step_Count = Step_Count;
 			} else if (options == 2) {
